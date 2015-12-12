@@ -16,7 +16,6 @@ License:	PHP
 URL:		http://pecl.php.net/package/%{pecl_name}
 Source0:	http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 # remove bundled lzf libs
-Patch0:		php-lzf-rm-bundled-libs.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -54,7 +53,6 @@ slight speed cost.
 
 %prep
 %setup -c -q
-%patch0 -p0
 
 [ -f package2.xml ] || %{__mv} package.xml package2.xml
 %{__mv} package2.xml %{pecl_name}-%{version}/%{pecl_name}.xml
