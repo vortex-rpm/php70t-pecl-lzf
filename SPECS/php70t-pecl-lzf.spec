@@ -9,7 +9,7 @@
 
 Name:		%{php_base}-pecl-lzf
 Version:	1.6.3
-Release:	1.vortex%{?dist}
+Release:	2.vortex%{?dist}
 Summary:	Extension to handle LZF de/compression
 Group:		Development/Languages
 License:	PHP
@@ -114,6 +114,9 @@ fi
 %{pecl_xmldir}/%{name}.xml
 
 %changelog
+* Mon Dec 21 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 1.6.3-2.vortex
+- 7.0.1.
+
 * Sat Dec 12 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 1.6.3-1.vortex
 - Update to 1.6.3.
 
